@@ -66,3 +66,30 @@ console.log(count);
 // console.log(array[2])
 // console.log(array[15]);
 // console.log(strings[1]);
+
+
+// Q 8. Find numbers which addition is target
+var nums = [11,15,4,5];
+var target = 9;
+for(var i = 0; i < nums.length - 1; i++ ){ // 0,  1 , 2, 3, 4, 4 < 4
+    for(var j = i + 1 ; j < nums.length ; j++){ // 1, 2,3, 4 < 4
+        if(nums[i] + nums[j]  === target){
+            console.log(nums[i],nums[j])
+        }
+    }
+}
+
+Q 9. find addition of every second numnber from 
+var firstDigit = 1
+// var secondDigit = 346578
+var secondDigit = 10
+//  57689
+//  57690 + 
+//  57691
+//  57692 + 
+var add = 0;
+ for(var i = firstDigit + 1; i < secondDigit; i = i + 2 ){
+    // console.log(i)
+    add = add + i
+ }
+ console.log(add,"add here")
