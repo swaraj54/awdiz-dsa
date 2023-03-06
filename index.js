@@ -124,22 +124,41 @@
 // Q. Find out number 689 from given array
 // then print only "Got it" and if not found then return "Not found!";
 
-var arr = [2,4,6,23,56,3224,454,23,54,56,232,689,233];
-var N = 689;
-function findNumber(arr,N){
-    var flag = false;
-    for(var i =0; i< arr.length; i++){
-        if(arr[i] === N){
-            flag = true;
-        } 
-    }
-    if(flag === true){
-        return "Got it";
-    } else {
-        return "Not Found";
-    }
-}
-var myFunc = findNumber(arr,N);
-console.log(myFunc);
+// var arr = [2,4,6,23,56,3224,454,23,54,56,232,689,233];
+// var N = 689;
+// function findNumber(arr,N){
+//     var flag = false;
+//     for(var i =0; i< arr.length; i++){
+//         if(arr[i] === N){
+//             flag = true;
+//         } 
+//     }
+//     if(flag === true){
+//         return "Got it";
+//     } else {
+//         return "Not Found";
+//     }
+// }
+// var myFunc = findNumber(arr,N);
+// console.log(myFunc);
 
 // if im calling function and function returns then we need to apply console.log to calling function
+
+
+
+
+// Q. Given an array, make an object with key of that specific index with value from array;
+
+var array = [9,8,7,6,5,4,3,2,1,0]
+
+
+var result = {};
+
+
+for(var i = 0; i< array.length; i++){
+    // console.log(i)
+    result[i] = array[i].toString();
+}
+console.log(result);
+
+// {0: "9", 1: "8" , 2:"7",..., 9:'0' }
